@@ -68,6 +68,59 @@ html{
     list-style: none;
   }
 
+
+
+
+
+/* square */
+.content{
+  width: 100px;
+  height: 100px;
+  background-color: #EEEEEE;
+}
+.content-square{
+  width: 25px;
+  height: 25px;
+  background-color: #000000;
+  position: relative;
+  /* left: 0; */
+  margin: 0;
+}
+.content-square{
+  animation: black-square 5000ms linear 1000ms infinite normal both;
+}
+@keyframes black-square{
+  0%{left: 0;
+    top: 0;
+  background-color: #000000;}
+
+  25%{top: 75px;
+    left:0;
+    background-color: #2196f3;}
+
+  50%{
+    left: 75px;
+    top: 75px;
+    background-color: darkmagenta;
+  }
+
+  75%{
+    top: 0;
+    left: 75px;
+    background-color: crimson;
+  }
+
+  100%{
+    left: 0;
+    background-color: #000000;
+  }
+}
+
+
+
+
+
+
   /*шапка сайта*/
   
   /*logo*/
@@ -395,8 +448,34 @@ text-transform: uppercase;
   .link-thumb:focus .overlay-work{
     transform: translateY(0);
   } */
+      .img-thumb{
+        position: relative;
+        overflow:hidden;
+      }
 
+      .img-work > .overlay-text{
+      position: absolute;
+      background: rgba(47, 48, 58, 0.8);
+      color: #fff;
+      height: 70px;
+      width: 370px;
+      top: 1677px;
+      align-items: center;
+      }
+      .overlay-text{
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        padding-top: 27px;
+      }
     
+
    
   
 
