@@ -85,10 +85,12 @@ html{
   position: relative;
   /* left: 0; */
   margin: 0;
-}
-.content-square{
+
   animation: black-square 5000ms linear 1000ms infinite normal both;
 }
+/* .content-square{
+  animation: black-square 5000ms linear 1000ms infinite normal both;
+} */
 @keyframes black-square{
   0%{left: 0;
     top: 0;
@@ -158,6 +160,8 @@ html{
     margin-left: 93px;
   }
 
+  
+  
   .nav-list .link {
     display: block;
     position: relative;
@@ -171,7 +175,6 @@ html{
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
-  
   
 
   .nav-list .link:hover,
