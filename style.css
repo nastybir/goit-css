@@ -158,30 +158,21 @@ html{
     margin-left: 93px;
   }
 
-  .nav-list .link-current {
-    display: block;
-    padding-top: 21px;
-    padding-bottom: 21px; 
-
-    color: var(--accent-color);
-  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-  
   .nav-list .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: #000000;
     position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+
+    color: #000000;
+  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
+  
+  
 
   .nav-list .link:hover,
   .nav-list .link:focus {
@@ -201,8 +192,13 @@ html{
 
       background-color: var(--accent-color);
       border-radius: 4px;
+      transform: scale(0);
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  .nav-list .link:hover.current::after{
+    transform: scale(1);
+    /* transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  }
   .contacts-nav{
     display: flex;
     margin-left: auto;
